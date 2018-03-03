@@ -50,7 +50,7 @@ class Converter
 
         $php5Statements = $traverser->traverse($php7Statements);
 
-        return (new \PhpParser\PrettyPrinter\Standard())->prettyPrintFile($php5Statements);
+        return (new \Spatie\Php7to5\PrettyPrinter\StandardX())->prettyPrintFile($php5Statements);
     }
 
     /**
